@@ -1,0 +1,116 @@
+.footer__info-panel {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-top: 120px;
+    height: 220px;
+
+    &__logo {
+        padding-right: 64px;
+        height: inherit;
+        overflow: hidden;
+
+        p {
+            color: #898989;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.35px;
+            line-height: 20px;
+        }
+    }
+}
+
+.info-panel-wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 50%;
+
+    .footer__info-panel__link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3 {
+        color: $textColor;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.45px;
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    a {
+
+        color: #898989;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        position: relative;
+        padding-bottom: 15px;
+
+        &:hover:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 2px;
+            width: 100%;
+            height: 2px;
+            background: #898989;
+        }
+        &:active {
+            box-shadow: 3px 2px 2px 5px #222;
+        }
+    }
+}
+
+.footer-background {
+    height: 80px;
+    background-color: #e6e6e6;
+
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        height: inherit;
+
+        &__copyright {
+            color: #7a7a7a;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.4px;
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+        }
+
+        &__social-link {
+            display: flex;
+            align-items: center;
+
+            a {
+                color: #b2b2b2;
+                font-size: 16px;
+                font-weight: 400;
+                width: 32px;
+                height: 32px;
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+                &:hover {
+                    background-color: $textColor;
+                    color: $mainColor2;
+                }
+                &:active {
+                   opacity: 0.5;
+                    background-color: $mainColor2;
+                    color: #b2b2b2;
+                }
+            }
+        }
+    }
+}
