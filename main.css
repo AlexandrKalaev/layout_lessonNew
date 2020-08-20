@@ -573,3 +573,25 @@ a {
           opacity: 0.5;
           background-color: #ffffff;
           color: #b2b2b2; }
+
+.new-arrivals-background {
+  background-color: #f8f3f4;
+  height: 148px; }
+  .new-arrivals-background .new-arrivals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .new-arrivals-background .new-arrivals ul {
+      display: flex; }
+      .new-arrivals-background .new-arrivals ul li {
+        list-style-type: none;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-weight: 500; }
+        .new-arrivals-background .new-arrivals ul li:not(:last-child) {
+          padding-right: 8px; }
+        .new-arrivals-background .new-arrivals ul li:after:not(:last-child) {
+          content: '/'; }
+        .new-arrivals-background .new-arrivals ul li a {
+          color: #636363; }

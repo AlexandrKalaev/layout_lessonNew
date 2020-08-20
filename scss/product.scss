@@ -1,0 +1,31 @@
+.new-arrivals-background {
+    background-color: #f8f3f4;
+    height: 148px;
+
+    .new-arrivals {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+
+            li {
+                list-style-type: none;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-weight: 500;
+                &:not(:last-child) {
+                    padding-right: 8px;
+                }
+                &:after:not(:last-child) {
+                    content: '/';
+                }
+                a {
+                    color: #636363;
+                }
+            }
+        }
+    }
+}
