@@ -375,7 +375,7 @@ a {
   background-color: #c0c0c0;
   margin-bottom: 50px; }
   .wrapper-subscribe__background {
-    background: url(../img/Layer_41.png), url(../img/Rectangle_9_copy.svg);
+    background: url(img/Layer_41.png), url(img/Rectangle_9_copy.svg);
     background-blend-mode: overlay;
     height: inherit;
     background-repeat: no-repeat;
