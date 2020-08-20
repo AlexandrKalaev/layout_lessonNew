@@ -324,7 +324,7 @@ a {
   .shop-servise__sale {
     text-transform: uppercase;
     color: #ffffff;
-    background: url(../img/Layer_38.png), url(../img/Layer_39.png);
+    background: url(img/Layer_38.png), url(img/Layer_39.png);
     background-blend-mode: overlay;
     min-width: 66%;
     height: inherit; }
