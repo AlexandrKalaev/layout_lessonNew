@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,700&display=swap");
 .header {
   display: flex;
   justify-content: space-between;
@@ -378,8 +378,8 @@ a {
     background: url(img/Layer_41.png), url(img/Rectangle_9_copy.svg);
     background-blend-mode: overlay;
     height: inherit;
-    background-repeat: no-repeat;
-    background-position: center; }
+    background-size: cover;
+    background-position: bottom; }
 
 .subscribe {
   height: inherit;
@@ -578,9 +578,15 @@ a {
   background-color: #f8f3f4;
   height: 148px; }
   .new-arrivals-background .new-arrivals {
+    height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .new-arrivals-background .new-arrivals h2 {
+      color: #f16d7f;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase; }
     .new-arrivals-background .new-arrivals ul {
       display: flex; }
       .new-arrivals-background .new-arrivals ul li {
@@ -588,10 +594,121 @@ a {
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
-        font-weight: 500; }
+        font-weight: 600; }
         .new-arrivals-background .new-arrivals ul li:not(:last-child) {
           padding-right: 8px; }
         .new-arrivals-background .new-arrivals ul li:after:not(:last-child) {
           content: '/'; }
         .new-arrivals-background .new-arrivals ul li a {
           color: #636363; }
+          .new-arrivals-background .new-arrivals ul li a:hover {
+            color: #f16d7f; }
+
+.cart-center {
+  display: flex;
+  align-items: center;
+  color: #656565;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0; }
+  .cart h2 {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.2px; }
+  .cart__product {
+    display: flex;
+    min-width: 30%; }
+    .cart__product__photo {
+      width: 100px;
+      height: 115px; }
+      .cart__product__photo img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        object-position: center; }
+    .cart__product__desc {
+      padding-left: 20px; }
+      .cart__product__desc h3 {
+        color: #222222;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase; }
+      .cart__product__desc p {
+        color: #575757;
+        font-size: 13px;
+        font-weight: 500; }
+        .cart__product__desc p span {
+          color: #6f6e6e;
+          font-weight: 300; }
+  .cart__price {
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .cart__price a {
+      padding: 10px; }
+      .cart__price a i {
+        height: 16px;
+        width: 16px;
+        background-color: #c0c0c0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        color: #ffffff;
+        transition: 1s; }
+      .cart__price a:hover i {
+        background-color: #f16d7f;
+        transition: 1s; }
+
+.cart-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 25px; }
+  .cart-button a {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border: 1px solid #eaeaea;
+    transition: 0.5s; }
+    .cart-button a:hover {
+      color: #ffffff;
+      background-color: #f16d7f;
+      transition: 0.5s; }
+
+.cart-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px; }
+  .cart-form__shipping {
+    display: flex;
+    flex-direction: column; }
+  .cart-form h3 {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .cart-form input {
+    outline: none;
+    border: 1px solid #eaeaea;
+    width: 355px;
+    height: 45px;
+    margin: 20px 0; }
+  .cart-form .cart-form-button {
+    color: #4a4a4a;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    border: 1px solid #eaeaea;
+    width: fit-content; }

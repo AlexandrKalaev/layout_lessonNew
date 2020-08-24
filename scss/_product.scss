@@ -3,9 +3,17 @@
     height: 148px;
 
     .new-arrivals {
+        height: inherit;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        h2 {
+            color: #f16d7f;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
 
         ul {
             display: flex;
@@ -15,15 +23,21 @@
                 font-size: 14px;
                 font-weight: 700;
                 text-transform: uppercase;
-                font-weight: 500;
+                font-weight: 600;
+
                 &:not(:last-child) {
                     padding-right: 8px;
                 }
+
                 &:after:not(:last-child) {
                     content: '/';
                 }
+
                 a {
                     color: #636363;
+                    &:hover {
+                        color: #f16d7f;
+                    }
                 }
             }
         }
