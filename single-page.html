@@ -6,6 +6,7 @@
     <script src="https://kit.fontawesome.com/138cde80e6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <div class="header container">
         <div class="header__left">
@@ -17,7 +18,7 @@
             </form>
         </div>
         <div class="header__right">
-            <a href="shop-cart.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="29" viewBox="0 0 32 29">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="29" viewBox="0 0 32 29">
                     <g>
                         <g>
                             <path fill="#222" d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z" />
@@ -29,7 +30,7 @@
     </div>
     <div class="header__line"></div>
     <div class="header__menu container">
-        <a href="index.html">home</a>
+        <a href="#">home</a>
         <a href="#">man</a>
         <a href="#">women</a>
         <a href="#">kids</a>
@@ -37,7 +38,7 @@
         <a href="#">featured</a>
         <a href="#">hot deals</a>
     </div>
-    
+
     <div class="new-arrivals-background">
         <div class="new-arrivals container">
             <h2>new arrivals</h2>
@@ -48,115 +49,103 @@
             </ul>
         </div>
     </div>
-    
-    <div class="cart container">
-       
-        <div class="cart__product">
-            <h2>product details</h2>
-        </div>
-        <div class="cart__price"><h2>unite price</h2></div>
-        <div class="cart__price"><h2>quanity</h2></div>
-        <div class="cart__price"><h2>shipping</h2></div>        
-        <div class="cart__price"><h2>subtotal</h2></div>
-        <div class="cart__price"><h2>action</h2></div>
+
+    <div class="slider-wrapper">
+        <a href="#"><i class="fas fa-chevron-left"></i></a>
+        <div class="slider container"></div>
+        <a href="#"><i class="fas fa-chevron-right"></i></a>
     </div>
-     <div class="header__line container"></div>
-    <div class="cart container">
-       
-        <div class="cart__product">
-            <div class="cart__product__photo">
-                <img src="img/Layer_38.png" alt="product">
+
+    <div class="desc-product-wrapper container">
+        <div class="desc-product">
+            <div class="desc-product-text">
+                <h3>women collection</h3>
+                <p class="header-desc">moschino cheap and chic</p>
+                <p class="desc-text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+                <div class="desc-options">
+                    <p>material:<span>cottom</span></p>
+                    <p>designer:<span>binburhan</span></p>
+                </div>
+                <p class="product-price">$38457</p>
             </div>
-            <div class="cart__product__desc">
-                <h3>mango people t-shirt</h3>
-                <p>Color: <span>Red</span></p>
-                <p>Size: <span></span></p>
-            </div>
-        </div>
-        <div class="cart__price cart-center">$150</div>
-        <div class="cart__price cart-center">2</div>
-        <div class="cart__price cart-center">free</div>        
-        <div class="cart__price cart-center">$300</div>
-        <div class="cart__price cart-center"><a href="#"><i class="fas fa-times"></i></a></div>
-    </div>
-    <div class="header__line container"></div>
-    <div class="cart container">
-       
-        <div class="cart__product">
-            <div class="cart__product__photo">
-                <img src="img/Layer_38.png" alt="product">
-            </div>
-            <div class="cart__product__desc">
-                <h3>mango people t-shirt</h3>
-                <p>Color: <span>Red</span></p>
-                <p>Size: <span></span></p>
+            <div class="desc-product-form">
+                <form id="cart" method="get">
+                    <fieldset>
+                        <label for="choose-color">choose color</label>
+                        <input list="color" type="text" name="choose-color" placeholder="color">
+                        <datalist id="color">
+                            <option selected label="Red">Red</option>
+                            <option label="Blue">Blue</option>
+                            <option label="Green">Green</option>
+                        </datalist>
+                    </fieldset>
+                    <fieldset>
+                        <label for="choose-size">choose size</label>
+                        <input list="size" type="text" name="choose-size">
+                    </fieldset>
+                    <fieldset>
+                        <label for="quantity">quantity</label>
+                        <input list="quantity" type="text" name="quantity">
+                    </fieldset> <br>
+                </form>
+                <button type="submit" form="cart"><img src="img/cart-red.svg" alt="button">Add to Cart</button>
             </div>
         </div>
-        <div class="cart__price cart-center">$150</div>
-        <div class="cart__price cart-center">2</div>
-        <div class="cart__price cart-center">free</div>        
-        <div class="cart__price cart-center">$300</div>
-        <div class="cart__price cart-center"><a href="#"><i class="fas fa-times"></i></a></div>
     </div>
-     <div class="header__line container"></div>
-    <div class="cart container">
-       
-        <div class="cart__product">
-            <div class="cart__product__photo">
-                <img src="img/Layer_38.png" alt="product">
+    <div class="featured__header">
+        <h3>you may like also</h3>
+    </div>
+    <div class="featured container">
+
+        <div class="featured__product__wrapper">
+            <div class="featured__product">
+                <img src="img/Layer_1.png" alt="">
+                <div class="featured__product__hover">
+                    <a href="#"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                </div>
             </div>
-            <div class="cart__product__desc">
-                <h3>mango people t-shirt</h3>
-                <p>Color: <span>Red</span></p>
-                <p>Size: <span></span></p>
+            <div class="featured__product-desc">
+                <h3>Mango People T-shirt</h3>
+                <p>$52.00</p>
             </div>
         </div>
-        <div class="cart__price cart-center">$150</div>
-        <div class="cart__price cart-center">2</div>
-        <div class="cart__price cart-center">free</div>        
-        <div class="cart__price cart-center">$300</div>
-        <div class="cart__price cart-center"><a href="#"><i class="fas fa-times"></i></a></div>
-    </div>
-    
-    <div class="cart-button container">
-        <a href="#">clear shopping cart</a>
-        <a href="#">continue shopping</a>     
-    </div>
-    
-    <div class="cart-form container">
-        <div class="cart-form__shipping">
-            <h3>shipping adress</h3>
-            <form method="get">
-                <input type="text" list="country" placeholder="Bangladesh">
-                <datalist id="country">
-                    <option value="Bangladesh" selected></option>
-                    <option value="Laplandia"></option>
-                    <option value="Australia"></option>
-                    <option value="China"></option>
-                    <option value="India"></option>
-                </datalist>
-                <input type="text" placeholder="State">
-                <input type="text" placeholder="Poscode/Zip" pattern="([0-9]{6})" title="почтовый индекс в формате '000000'">
-                <input type="submit" value="get a quote">
-            </form>
-               
+        <div class="featured__product__wrapper">
+            <div class="featured__product">
+                <img src="img/Layer_1.png" alt="">
+                <div class="featured__product__hover">
+                    <a href="#"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="featured__product-desc">
+                <h3>Mango People T-shirt</h3>
+                <p>$52.00</p>
+            </div>
         </div>
-        <div class="cart-form__discounter">
-            <h3>coupon discount</h3>
-            <p>Enter your coupon code if you have one</p>
-            <form method="get">
-                <input type="text" placeholder="State">
-                <input type="submit" value="apply coupon">
-            </form>
+        <div class="featured__product__wrapper">
+            <div class="featured__product">
+                <img src="img/Layer_3.png" alt="">
+                <div class="featured__product__hover">
+                    <a href="#"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="featured__product-desc">
+                <h3>Mango People T-shirt</h3>
+                <p>$52.00</p>
+            </div>
         </div>
-        <div class="cart-form__total-price">
-            <p>sub total <span>$900</span></p>
-            <h3>grand total <span>$900</span></h3>
-            <div class="line"></div>
-            <input class="cart-checkout" type="submit" value="proceed to checkout">
+        <div class="featured__product__wrapper">
+            <div class="featured__product">
+                <img src="img/Layer_3.png" alt="">
+                <div class="featured__product__hover">
+                    <a href="#"><img src="img/Forma_1_copy.svg" alt="cart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="featured__product-desc">
+                <h3>Mango People T-shirt</h3>
+                <p>$52.00</p>
+            </div>
         </div>
     </div>
-    
     <div class="wrapper-subscribe">
         <div class="wrapper-subscribe__background">
             <div class="subscribe container">
@@ -187,7 +176,8 @@
             </div>
         </div>
     </div>
-  <div class="footer">
+
+    <div class="footer">
         <div class="footer__info-panel container">
             <div class="footer__info-panel__logo">
                 <a class="header__logo" href="#"><img src="img/logo.png" alt="logo">bran<span>d</span></a>
@@ -238,5 +228,4 @@
         </div>
     </div>
 
-</body>
-</html>
+</body></html>

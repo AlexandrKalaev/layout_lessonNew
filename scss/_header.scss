@@ -112,19 +112,30 @@
 }
 
 .header__menu a {
+    display: inline-block;
+    line-height: 1;
     margin: 19px 24px 22px 24px;
     color: $mainColor;
     font-size: 14px;
     font-weight: 700;
     position: relative;
-    &:hover:after {
+    &::after {
         content: '';
         display: block;
         position: absolute;
+        width: 0%;
+        left: 50%;
+        bottom: -7px;
+        height: 3px;
+        background-color: $textColor;
+        transition: width .3s ease-in-out;
+        transform: translateX(-50%);
+    }
+    &:hover::after {
+        width: 100%
+    }
+    &:focus::after {
         width: 100%;
-        bottom: 0;
-        height: 2px;
-        background-color: #222222;
     }
     &:active {
         opacity: 0.5;
