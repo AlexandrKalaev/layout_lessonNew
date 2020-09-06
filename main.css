@@ -869,7 +869,7 @@ input[type="range" i] {
   width: 100%; }
 
 input[name="size"]:checked ~ .size-form-checked::before {
-  background-image: url(../img/tick.png);
+  background-image: url(img/tick.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
