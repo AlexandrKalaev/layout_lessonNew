@@ -72,7 +72,7 @@
                 <form id="cart" method="get">
                     <fieldset>
                         <label for="choose-color">choose color</label>
-                        <input list="color" type="text" name="choose-color" placeholder="color">
+                        <input list="color" type="text" name="color" id="choose-color" placeholder="color">
                         <datalist id="color">
                             <option selected label="Red">Red</option>
                             <option label="Blue">Blue</option>
@@ -81,11 +81,11 @@
                     </fieldset>
                     <fieldset>
                         <label for="choose-size">choose size</label>
-                        <input list="size" type="text" name="choose-size">
+                        <input  type="text" name="choose" id="choose-size">
                     </fieldset>
                     <fieldset>
                         <label for="quantity">quantity</label>
-                        <input list="quantity" type="text" name="quantity">
+                        <input  type="text" name="quant" id="quantity">
                     </fieldset> <br>
                 </form>
                 <button type="submit" form="cart"><img src="img/cart-red.svg" alt="button">Add to Cart</button>

@@ -125,6 +125,7 @@ input[name="match"]:checked ~ .match-hint {
     font-weight: 400;
     text-transform: capitalize;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 input[name="trending"]:checked ~ .trending-form-checked {
@@ -136,7 +137,9 @@ input[name="trending"]:checked ~ .trending-form-checked {
     display: inline-block;
 }
 
-.vertical-line:not(:last-child):after {
+
+
+.vertical-line:not(:last-child)::after {
     content: '';
     display: inline-block;
     width: 1px;
@@ -145,11 +148,22 @@ input[name="trending"]:checked ~ .trending-form-checked {
     margin-left: 5px;
     margin-right: 2px;
 }
-
+.size-form {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        padding: 0;
+    }
+}
 .trending-form {
     ul {
         margin: 0;
         display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        padding: 0;
+        
     }
 }
 
@@ -161,6 +175,7 @@ input[name="trending"]:checked ~ .trending-form-checked {
     cursor: pointer;
     display: flex;
     padding-right: 12px;
+    margin-top: 10px;
 }
 
 .size-form-checked::before {
@@ -272,67 +287,79 @@ output[name="level"] {
             font-weight: bold;
             padding: 0 8px;
             transition: 0.5s;
+
             &:hover {
                 color: $textColor;
                 transition: 0.5s;
             }
         }
+
         span {
-          color: #c4c4c4;
+            color: #c4c4c4;
             font-size: 16px;
             font-weight: bold;
-              
+
         }
     }
 }
+
 .product-button {
     a {
         padding: 16px 45px;
-    color: #ef5b70;
-font-size: 16px;
-font-weight: bold;
-    text-transform: capitalize;
+        color: #ef5b70;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: capitalize;
         border-radius: 3px;
-border: 1px solid #ef5b70;
-background-color: #ffffff;
+        border: 1px solid #ef5b70;
+        background-color: #ffffff;
         transition: 0.3s;
     }
-    &:hover{
+
+    &:hover {
         filter: brightness(120%);
         transform: scale(1.05, 1.05);
         transition: 0.3s;
     }
 }
+
 .servise__list {
-    display: flex;justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+
     &__item {
         text-align: center;
         max-width: 33%;
         overflow: hidden;
         padding-top: 80px;
         padding-bottom: 100px;
+
         &__details {
-          max-height: 80px;
+            max-height: 80px;
             overflow: hidden;
             max-height: 100px;
+
             h3 {
                 color: #fbfbfb;
-font-size: 20px;
-font-weight: 700;
-letter-spacing: 0.5px;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
             }
+
             p {
                 color: #fbfbfb;
-font-size: 14px;
-font-weight: 300;
-letter-spacing: 0.35px;
+                font-size: 14px;
+                font-weight: 300;
+                letter-spacing: 0.35px;
             }
         }
     }
+
     &__item:not(:last-child) {
         padding-right: 81px;
     }
 }
+
 .servise-list-wrapper {
     background-color: #222224;
 }

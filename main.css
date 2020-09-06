@@ -5,7 +5,11 @@ ol {
 
 .zero-before {
   list-style: none;
-  padding: 30px 0; }
+  padding: 30px 0;
+  border-bottom: 1px solid #ebebeb; }
+
+.zero-before:first-child {
+  border-top: 1px solid #ebebeb; }
 
 .zero-before::before {
   counter-increment: zeroCounter;
@@ -807,7 +811,8 @@ input[name="match"]:checked ~ .match-hint {
   font-size: 14px;
   font-weight: 400;
   text-transform: capitalize;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-top: 10px; }
 
 input[name="trending"]:checked ~ .trending-form-checked {
   color: #f16d7f; }
@@ -816,7 +821,7 @@ input[name="trending"]:checked ~ .trending-form-checked {
   list-style: none;
   display: inline-block; }
 
-.vertical-line:not(:last-child):after {
+.vertical-line:not(:last-child)::after {
   content: '';
   display: inline-block;
   width: 1px;
@@ -825,9 +830,18 @@ input[name="trending"]:checked ~ .trending-form-checked {
   margin-left: 5px;
   margin-right: 2px; }
 
+.size-form ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  padding: 0; }
+
 .trending-form ul {
   margin: 0;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  padding: 0; }
 
 .size-form-checked {
   color: #6f6e6e;
@@ -836,7 +850,8 @@ input[name="trending"]:checked ~ .trending-form-checked {
   text-transform: uppercase;
   cursor: pointer;
   display: flex;
-  padding-right: 12px; }
+  padding-right: 12px;
+  margin-top: 10px; }
 
 .size-form-checked::before {
   content: '';
@@ -1165,7 +1180,7 @@ output[name="level"] {
       transition: 0.5s; }
 
 .slider-single {
-  background-image: url(img/Layer_42.png);
+  background-image: url(../img/Layer_42.png);
   width: 100%;
   height: inherit;
   background-repeat: no-repeat;

@@ -6,6 +6,10 @@ ol {
 .zero-before {
     list-style: none;
     padding: 30px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+.zero-before:first-child {
+    border-top: 1px solid #ebebeb;
 }
 
 .zero-before::before {
