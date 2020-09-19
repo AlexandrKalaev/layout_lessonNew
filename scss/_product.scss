@@ -192,13 +192,13 @@ input[name="size"]:checked ~ .size-form-checked {
     color: $textColor;
 }
 
-input[type="range"i] {
+input[type="range"] {
     width: 100%;
 
 }
 
 input[name="size"]:checked ~ .size-form-checked::before {
-    background-image: url(img/tick.png);
+    background-image: url(../img/tick.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

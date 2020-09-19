@@ -102,6 +102,12 @@ input[type="checkbox"]:checked ~ .check-nesting {
     background-color: #ffffff;
     margin: 15px 0;
     cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+        color: #ffffff;
+        background-color: #f16d7f;
+        transition: 0.3s;
+    }
 }
 
 .wrapper-hidden-hint {

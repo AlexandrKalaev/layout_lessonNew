@@ -60,7 +60,7 @@ a {
 }
 
 .brand__img {
-    background-image: url(img/man_img.png);
+    background-image: url(../img/man_img.png);
     height: inherit;
     min-width: 50%;
     background-position-y: -48px;
@@ -86,24 +86,24 @@ a {
 }
 
 .layer__photo1 {
-    background-image: url(img/Layer_1.png);
+    background-image: url(../img/Layer_1.png);
     background-size: cover;
     background-position: center;
 }
 
 .layer__photo2 {
-    background-image: url(img/Layer_3.png);
+    background-image: url(../img/Layer_3.png);
     background-size: cover;
     background-position: center;
 }
 
 .layer__photo3 {
-    background-image: url(img/Layer_1.png);
+    background-image: url(../img/Layer_1.png);
     background-size: cover;
 }
 
 .layer__photo4 {
-    background-image: url(img/Layer_2.png);
+    background-image: url(../img/Layer_2.png);
     background-size: cover;
     background-position: center;
 }
@@ -167,7 +167,7 @@ a {
             width: inherit;
             height: 280px;
 
-            & > img {
+            &>img {
                 height: inherit;
                 width: inherit;
                 object-fit: cover;
@@ -212,12 +212,14 @@ a {
     }
 
 }
+
 .featured__product__wrapper:hover {
-        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-    }
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
 .featured__product__wrapper:hover .featured__product__hover {
     display: flex;
-    
+
 }
 
 .featured__product-desc {
@@ -246,6 +248,7 @@ a {
     padding-right: 12px;
     display: flex;
     align-items: center;
+
     &:active {
         background-color: gainsboro;
         border-radius: 50%;
@@ -256,8 +259,9 @@ a {
         font-size: 16px;
         font-weight: 700;
         letter-spacing: 0.4px;
+
         &:active {
-            color: #f16d7f 
+            color: #f16d7f
         }
 
         span {
@@ -274,7 +278,7 @@ a {
     &__sale {
         text-transform: uppercase;
         color: #ffffff;
-        background: url(img/Layer_38.png), url(img/Layer_39.png);
+        background: url(../img/Layer_38.png), url(../img/Layer_39.png);
         background-blend-mode: overlay;
         min-width: 66%;
         height: inherit;
@@ -349,7 +353,7 @@ a {
     margin-bottom: 50px;
 
     &__background {
-        background: url(img/Layer_41.png), url(img/Rectangle_9_copy.svg);
+        background: url(../img/Layer_41.png), url(../img/Rectangle_9_copy.svg);
         background-blend-mode: overlay;
         height: inherit;
         background-size: cover;
@@ -408,16 +412,20 @@ a {
                 letter-spacing: 0.3px;
                 text-transform: capitalize;
             }
+
             .slider {
                 display: flex;
+
                 a {
                     width: 38px;
                     height: 4px;
                     background-color: #d6d6d6;
                     margin-top: 40px;
+
                     &:not(:last-child) {
                         margin-right: 13px;
                     }
+
                     &:hover {
                         background-color: $textColor;
                     }
@@ -427,7 +435,7 @@ a {
     }
 
     &__right {
-       display: flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -495,5 +503,62 @@ a {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .subscribe__right input, button{
+        border-radius: 23px;
+    }
+    .subscribe__right{
+        text-align: center;
+    }
+}
+
+@media (max-width: 849.98px) {
+    .subscribe{
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        &__right{
+            border: none;
+            input{
+                width: 32%;;
+            }
+        }
+        &__slider{
+            padding-top: 10px;
+        }
+    }
+    .footer__info-panel{
+        flex-direction: column;
+        height: fit-content!important;
+    }
+    .info-panel-wrapper{
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {
+    .layer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+
+        .big-img,
+        .small-img {
+            margin-top: 20px;
+        }
+    }
+
+    .featured {
+        justify-content: space-around;
+    }
+
+    .featured__button {
+        max-width: fit-content;
     }
 }
